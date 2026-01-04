@@ -58,9 +58,9 @@ The API will be available at `http://localhost:8080`.
 
 ## Basic Usage
 
-### Health check (doesn't require authorization):
-
 The following commands assume that you have [curl](https://curl.se/) and [jq](https://jqlang.org/) installed. If you don't want to install `jq`, you can copy and paste the relevant fields from the JSON responses.
+
+### Health check (doesn't require authorization):
 
 ```bash
 curl http://localhost:8080/health
