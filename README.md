@@ -60,14 +60,13 @@ The API will be available at `http://localhost:8080`.
 
 ### Health check (doesn't require authorization):
 
+The following commands assume that you have [curl](https://curl.se/) and [jq](https://jqlang.org/) installed. If you don't want to install `jq`, you can copy and paste the relevant fields from the JSON responses.
+
 ```bash
 curl http://localhost:8080/health
 ```
 
-
 ### Obtain a JWT (only for testing):
-
-The following commands assume that you have [curl](https://curl.se/) and [jq](https://jqlang.org/) installed. If you don't want to install `jq`, you can copy and paste the relevant fields from the JSON responses.
 
 ```bash
 TOKEN=$(curl -s -X POST http://localhost:8080/auth/token | jq -r '.token')
